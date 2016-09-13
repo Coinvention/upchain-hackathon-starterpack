@@ -2,6 +2,14 @@
 
 This repository gives you a fast start into the World of developing for the  [Blockchain](https://en.wikipedia.org/wiki/Block_chain),  write smart [contracts](https://en.wikipedia.org/wiki/Smart_contract) in Solidity and provide [Dapps](http://dapps.ethercasts.com/) to access them.
 
+## Quick Setup
+
+```
+git clone git@github.com:Upchain/upchain-hackathon-starterpack.git
+npm install
+upchain deploy --testnet --apiKey <YourApiKey>
+````
+
 ## Documentation
 
 * [Architectural Overview](./docs/overview.md)
