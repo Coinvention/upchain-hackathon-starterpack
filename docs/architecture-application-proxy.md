@@ -31,3 +31,4 @@ Configuration of the serveice can be provided by evironment variables
 * File System Storage
 * API Keys defined
 * The 'upchain-certs' npm module
+* STDOUT for logging

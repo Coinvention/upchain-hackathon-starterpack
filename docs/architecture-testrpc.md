@@ -25,3 +25,4 @@ This is started as is. However, there is some tuning that you can give the block
 
 * Port TCP/IP 8545
 * File System for self startup
+* STDOUT for logging
