@@ -30,13 +30,25 @@ There are 2 basic things you can do with this setup.
 
 ### Getting started with development
 
-* Clone this repo
-* Install dependencies
-* Start your dapp
-  1. Starts testrpc
-  2. Starts the  proxy
-  3. Starts truffle and builds contracts
-  4. Starts the proxy for the truffle app
+Clone this repo
+```bash
+git clone git@github.com:Upchain/upchain-hackathon-starterpack.git
+```
+Install dependencies
+
+```bash
+npm install
+```
+Start your dapp
+
+```bash
+npm start
+```
+
+1. Starts testrpc
+2. Starts the  proxy
+3. Starts truffle and builds contracts
+4. Starts the proxy for the truffle app
 
 ### Deploy your contracts
 
