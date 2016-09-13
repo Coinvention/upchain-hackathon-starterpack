@@ -40,7 +40,14 @@ Deploy your contracts
 npm run contracts:deploy:testnet
 #does: upchain deploy --testnet --apiKey <YourApiKey>
 ```
+## Prerequisites
 
+* Node.js 6.0+
+* Command Line Tools
+  * Mac OS X: Xcode (or OS X 10.9+: xcode-select --install)
+  * Ubuntu /  Linux Mint: sudo apt-get install build-essential
+  * Fedora: sudo dnf groupinstall "Development Tools"
+  * OpenSUSE: sudo zypper install --type pattern devel_basis
 
 ## Documentation
 
