@@ -19,3 +19,11 @@ Intercepts requests to truffle to add some extra security and control. **Truffle
 ## Testrpc
 
 A simulated Blockchain, written in node.js. This is **VERY** handy for testing, since there is no waiting for transactions to be mined and you have a lot of parameters (including an account full of ETH)
+
+## Testnet
+
+We are using the Go Ethereum Toolchain - GETH here. This provides us with access to the so called testnet, a copy of the main blockchain purposed for testing.
+
+## DAPP
+
+This is a typical web application. It needs access to a [Geth testnet](./docs/architecture-testrpc.md) or [Testrpc](./docs/architecture-testrpc.md) JSON RPC 2.0 blockchain API Server.
