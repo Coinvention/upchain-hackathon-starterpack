@@ -13,13 +13,14 @@
     "type": "git",
     "url": "git+https://github.com/Upchain/upchain-hackathon-starterpack.git"
   },
-  "author": "",
+  "author": "Upchain GmbH",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Upchain/upchain-hackathon-starterpack/issues"
   },
   "homepage": "https://github.com/Upchain/upchain-hackathon-starterpack#readme",
   "dependencies": {
+    "ethereumjs-testrpc": "^2.2.7",
     "pm2": "^1.1.3",
     "truffle": "^2.0.8"
   }
