@@ -16,7 +16,6 @@ This repository gives you a fast start into the World of developing for the  [Bl
 * [upchain-web3-http-provider](https://github.com/Upchain/web3-http-provider)
 * [ethereumjs-testrpc](https://github.com/ethereumjs/testrpc)
 * [truffle](https://github.com/ConsenSys/truffle/)
-* [geth](https://github.com/ethereum/go-ethereum/wiki/geth)
 
 ## Getting started
 
@@ -45,23 +44,40 @@ Start your dapp
 npm start
 ```
 
-1. Starts testrpc
-2. Starts the  proxy
+1. Starts [testrpc](https://github.com/ethereumjs/testrpc)
+2. Starts the  [proxy](https://github.com/Upchain/upchain-ethereum-rpc-proxy)
 3. Starts truffle and builds contracts
 4. Starts the proxy for the truffle app
 
 ### Deploy your contracts
 
-1. Deploys to testrpc first
-2. Runs all tests
-3. If OK: Deploy to testned
-4. Return contracts addresses
+**Testrpc**
 
 ```bash
-npm run contracts:deploy:testnet
-#does: upchain deploy --testnet --apiKey <YourApiKey>
+npm run contracts:deploy:testrpc
 ```
+
+1. Build your contracts first
+2. Runs all tests
+3. If OK: Deploy to testrpc
+4. Return contracts addresses
+
+**Testnet**
+
+```bash
+npm run contracts:deploy:testnet --apiKey  <apiKey>
+```
+
+1. Build your contracts first
+2. Runs all tests
+3. If OK: Deploy to testrpc
+4. Return contracts addresses
+
 ## Prerequisites
+
+**There are a lot of libraries that require compilation and some -g installs do ease up operation of things. The build tools and a compiler (g++) and python help fix warnings on build time.
+
+A setup, based on NVM will do the trick as well.
 
 * Node.js 6.0+
 * Command Line Tools
