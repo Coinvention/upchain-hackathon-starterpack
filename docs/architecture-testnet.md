@@ -1,5 +1,7 @@
 # Geth Testnet
 
+Synopsis: A complete node of 'geth' with a open so called RPC interface. This is how your app acesses the blockchain.
+
 ##  Inbound Messages
 
 * HTTP JSON RPC 2.0 Calls on POST "/", application type "application/json"

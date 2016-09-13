@@ -1,5 +1,7 @@
 # RPC Proxy
 
+Synopsis: Takes the NON HTTPS variants of JSON RPC 2.0 requests, add HTTPS and allows for tighter control over these requests. For example client API Keys, to limit prublic access to the API.
+
 ##  Inbound Messages
 
 * JSON RPC 2.0 Calls on POST "/", application type "application/json, including a 'X-API-KEY' header with a application wide api key
