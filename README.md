@@ -13,7 +13,7 @@ This repository gives you a fast start into the World of developing for the  [Bl
 ## Ingredients
 
 * [upchain-ethereum-rpc-proxy](https://github.com/Upchain/upchain-ethereum-rpc-proxy)
-* [upchain-web3-http-provider](https://github.com/Upchain/web3-http-provider)
+* [upchain-web3-http-provider](https://github.com/Upchain/upchain-web3-http-provider)
 * [ethereumjs-testrpc](https://github.com/ethereumjs/testrpc)
 * [truffle](https://github.com/ConsenSys/truffle/)
 
@@ -25,7 +25,6 @@ There are 2 basic things you can do with this setup.
 * **Deploy the code to testnet and test your application with a public blockchain**
 
 ![Overview](./docs/images/overview_readme.png)
-
 
 ### Getting started with development
 
