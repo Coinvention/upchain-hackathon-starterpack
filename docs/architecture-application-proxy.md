@@ -1,7 +1,14 @@
 # Application Proxy
 
 ##  Inbound Messages
-##  Outbound Messages
+
+* ANY HTTPS GET call will be proxied
+* ANY HTTPS POST call to /socksjs/ will be proxied to implement fallback mechanisms for Meteor.js and its websockets feature
+
+## Outbound Messages
+
+* HTTPS Responses with document types detected from the source server
+* HTTPS, application/json responses for the socks calls
 
 ## Configuration Parameters
 
