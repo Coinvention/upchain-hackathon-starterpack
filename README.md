@@ -78,6 +78,6 @@ npm run contracts:deploy:testnet
   * JSON RPC / Blockchain access
     * [Testrpc](./docs/architecture-testrpc.md)
     * PrivateChain (Todo)
-    * [Testnet](./docs/architecture-testrpc.md)
+    * [Testnet](./docs/architecture-testnet.md)
     * Mainnet (Todo)
   * Truffle
