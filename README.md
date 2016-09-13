@@ -12,6 +12,14 @@ There are 2 basic things you can do with this setup
 2. Deploy the code to testnet and test your allication with a public blockchain
 
 
+
+## Current shortcomings (hackathon perspective)
+
+Is this true?
+* Https certificates need to be installed
+* Applications always require a password
+* Difficult debugging on testnet as errors end up in proxy and are not relayed to the user
+
 ## Features
 
 * Test Driven Development for Smart Contracts
@@ -25,7 +33,10 @@ There are 2 basic things you can do with this setup
 * [upchain-web3-http-provider](https://github.com/Upchain/web3-http-provider)
 * [ethereumjs-testrpc](https://github.com/ethereumjs/testrpc)
 * [truffle](https://github.com/ConsenSys/truffle/)
-* [geth](https://github.com/ethereum/go-ethereum/wiki/geth)
+* [geth](https://github.com/ethereum/go-ethereum/wiki/geth) -> Is geth really an ingredient for the hackathon package? Do users need to run it -> it's on our server, people simply connect to it, no?
+ 
+
+
 
 ## Getting started
 
