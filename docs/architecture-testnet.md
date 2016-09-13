@@ -1,6 +1,8 @@
 # Geth Testnet
 
-Synopsis: A complete node of 'geth' with a open so called RPC interface. This is how your app acesses the blockchain.
+![Architecture](./images/arch_testnet.png)
+
+> Synopsis: A complete node of 'geth' with a open so called RPC interface. This is how your app acesses the blockchain.
 
 ##  Inbound Messages
 

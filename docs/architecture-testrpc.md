@@ -1,5 +1,7 @@
 # Functional Architecture: Testrpc
 
+![Architecture](./images/arch_testrpc.png)
+
 Synopsis: Provides a simulated blockchain, easy to debug and config, but only a simulated copy without consensus or peers. Not even a real blockchain.
 
 * Pre-Configure accounts
