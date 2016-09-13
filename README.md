@@ -2,6 +2,16 @@
 
 This repository gives you a fast start into the World of developing for the  [Blockchain](https://en.wikipedia.org/wiki/Block_chain),  write smart [contracts](https://en.wikipedia.org/wiki/Smart_contract) in Solidity and provide [Dapps](http://dapps.ethercasts.com/) to access them.
 
+## 2 Modes
+
+There are 2 basic things you can do with this setup
+
+![Overview](./docs/images/overview_readme.png)
+
+1. Develop and Test Smart contract code locally
+2. Deploy the code to testnet and test your allication with a public blockchain
+
+
 ## Features
 
 * Test Driven Development for Smart Contracts
