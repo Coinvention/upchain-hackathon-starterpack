@@ -2,15 +2,6 @@
 
 This repository gives you a fast start into the World of developing for the  [Blockchain](https://en.wikipedia.org/wiki/Block_chain),  write smart [contracts](https://en.wikipedia.org/wiki/Smart_contract) in Solidity and provide [Dapps](http://dapps.ethercasts.com/) to access them.
 
-## 2 Modes
-
-There are 2 basic things you can do with this setup
-
-![Overview](./docs/images/overview_readme.png)
-
-1. Develop and Test Smart contract code locally
-2. Deploy the code to testnet and test your allication with a public blockchain
-
 
 ## Features
 
@@ -29,7 +20,15 @@ There are 2 basic things you can do with this setup
 
 ## Getting started
 
-Getting started with development
+There are 2 basic things you can do with this setup.
+
+![Overview](./docs/images/overview_readme.png)
+
+* **Develop and Test Smart contract code locally**
+* **Deploy the code to testnet and test your application with a public blockchain**
+
+
+### Getting started with development
 
 * Clone this repo
 * Install dependencies
@@ -39,7 +38,7 @@ Getting started with development
   3. Starts truffle and builds contracts
   4. Starts the proxy for the truffle app
 
-Deploy your contracts
+### Deploy your contracts
 
 1. Deploys to testrpc first
 2. Runs all tests
