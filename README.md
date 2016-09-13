@@ -22,10 +22,10 @@ This repository gives you a fast start into the World of developing for the  [Bl
 
 There are 2 basic things you can do with this setup.
 
-![Overview](./docs/images/overview_readme.png)
-
 * **Develop and Test Smart contract code locally**
 * **Deploy the code to testnet and test your application with a public blockchain**
+
+![Overview](./docs/images/overview_readme.png)
 
 
 ### Getting started with development
