@@ -9,13 +9,38 @@ This repository gives you a fast start into the World of developing for the  [Bl
 * Test your contracts locally and a global test block chain
 * Create a basic decentralized application
 
-## Quick Setup
+## Ingredients
 
+* [upchain-ethereum-rpc-proxy](https://github.com/Upchain/upchain-ethereum-rpc-proxy)
+* [upchain-web3-http-provider](https://github.com/Upchain/web3-http-provider)
+* [ethereumjs-testrpc](https://github.com/ethereumjs/testrpc)
+* [truffle](https://github.com/ConsenSys/truffle/)
+* [geth](https://github.com/ethereum/go-ethereum/wiki/geth)
+
+## Getting started
+
+Getting started with development
+
+* Clone this repo
+* Install dependencies
+* Start your dapp
+  1. Starts testrpc
+  2. Starts the  proxy
+  3. Starts truffle and builds contracts
+  4. Starts the proxy for the truffle app
+
+Deploy your contracts
+
+1. Deploys to testrpc first
+2. Runs all tests
+3. If OK: Deploy to testned
+4. Return contracts addresses
+
+```bash
+npm run contracts:deploy:testnet
+#does: upchain deploy --testnet --apiKey <YourApiKey>
 ```
-git clone git@github.com:Upchain/upchain-hackathon-starterpack.git
-npm install
-upchain deploy --testnet --apiKey <YourApiKey>
-````
+
 
 ## Documentation
 
