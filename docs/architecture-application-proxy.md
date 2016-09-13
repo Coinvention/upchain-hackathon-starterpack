@@ -1,5 +1,7 @@
 # Application Proxy
 
+![Architecture](./images/arch_proxy.png)
+
 Synopsis: Takes the NON HTTPS variants of 'application servers' like e.g. 'truffle serve' and adds configuration for: HTTPS, BasicAuth, CORS to allow for development with all that "on".
 This way you can develop, but have all the details of secure website as first class citizens there. Safety first, this is about money.
 
