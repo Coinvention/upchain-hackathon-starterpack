@@ -22,7 +22,8 @@
     "start:truffle": "pm2 start truffle -- serve",
     "start:all": "npm run start:testrpc && npm run start:truffle && npm run start:proxy",
     "migrate:contracts": "truffle migrate",
-    "test:contracts": "truffle test"
+    "test:contracts": "truffle test",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
