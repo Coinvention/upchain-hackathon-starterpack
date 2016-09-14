@@ -43875,9 +43875,9 @@ module.exports = transfer;
 
 },{"crypto":58}],224:[function(require,module,exports){
 module.exports = {
+  "ConvertLib": require("/Users/sebs/projects/customers/upchain/upchain-hackathon-starterpack/build/contracts/ConvertLib.sol.js"),
   "MetaCoin": require("/Users/sebs/projects/customers/upchain/upchain-hackathon-starterpack/build/contracts/MetaCoin.sol.js"),
   "Migrations": require("/Users/sebs/projects/customers/upchain/upchain-hackathon-starterpack/build/contracts/Migrations.sol.js"),
-  "ConvertLib": require("/Users/sebs/projects/customers/upchain/upchain-hackathon-starterpack/build/contracts/ConvertLib.sol.js"),
 };
 },{"/Users/sebs/projects/customers/upchain/upchain-hackathon-starterpack/build/contracts/ConvertLib.sol.js":1,"/Users/sebs/projects/customers/upchain/upchain-hackathon-starterpack/build/contracts/MetaCoin.sol.js":2,"/Users/sebs/projects/customers/upchain/upchain-hackathon-starterpack/build/contracts/Migrations.sol.js":3}]},{},[224])(224)
 });
@@ -43912,7 +43912,7 @@ window.addEventListener('load', function() {
 
                                                                 
 
-  [ConvertLib,MetaCoin,Migrations].forEach(function(contract) {         
+  [ConvertLib,Migrations,MetaCoin].forEach(function(contract) {         
 
     contract.setProvider(window.web3.currentProvider);          
 
@@ -43962,6 +43962,17 @@ function sendCoin() {
 };
 
 window.onload = function() {
+
+  web3.setProvider(new UpchainHttpProvider('https://localhost:8546', {
+    'X-API-KEY': 'foo'
+  }));
+
+  var contracts = [MetaCoin, ConvertLib];
+  // just collect thge contracts and reset the providers as you do it with pudding
+  contracts.map(function(contract) {
+    console.log(contract);
+    contract.setProvider(window.web3.currentProvider);
+  });
   web3.eth.getAccounts(function(err, accs) {
     if (err != null) {
       alert("There was an error fetching your accounts.");
@@ -43975,7 +43986,6 @@ window.onload = function() {
 
     accounts = accs;
     account = accounts[0];
-
     refreshBalance();
   });
 }

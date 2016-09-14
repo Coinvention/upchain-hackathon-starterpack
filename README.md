@@ -56,14 +56,14 @@ This runs a set of mocha based [unit tests](./test)
 npm run contracts:test
 ```
 
-### Deploy your contracts
+### Migrate
 
 This runs a set of [migrations](./migrations) and deploys your contracts to the specified chain.
 
 **Testrpc**
 
 ```bash
-npm run contracts:deploy:testrpc
+npm run contracts:migrate
 ```
 
 **Testnet**
@@ -71,7 +71,6 @@ npm run contracts:deploy:testrpc
 ```bash
 # todo
 ```
-
 
 ## Prerequisites
 
