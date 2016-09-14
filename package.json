@@ -7,7 +7,10 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "sh ./scripts/setup-proxy.sh",
+    "stop:all": "pm2 delete all",
+    "stop:testrpc": "pm2 delete testrpc",
+    "start:testrpc": "pm2 start testrpc"
   },
   "repository": {
     "type": "git",
@@ -23,7 +26,7 @@
     "ethereumjs-testrpc": "^2.2.7",
     "pm2": "^1.1.3",
     "truffle": "^2.0.8",
-    "upchain-certs": "git+ssh://git@github.com:Upchain/Tokens.git",
+    "upchain-tokens": "git+ssh://git@github.com:Upchain/Tokens.git",
     "upchain-web3-http-provider": "^1.11.1"
   }
 }
