@@ -40,7 +40,6 @@ window.onload = function() {
   web3.setProvider(new UpchainHttpProvider('https://localhost:8546', {
     'X-API-KEY': 'foo'
   }));
-
   var contracts = [MetaCoin, ConvertLib];
   // just collect thge contracts and reset the providers as you do it with pudding
   contracts.map(function(contract) {
@@ -57,6 +56,7 @@ window.onload = function() {
       alert("Couldn't get any accounts! Make sure your Ethereum client is configured correctly.");
       return;
     }
+
 
     accounts = accs;
     account = accounts[0];
