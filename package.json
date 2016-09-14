@@ -7,7 +7,10 @@
     "doc": "docs"
   },
   "scripts": {
-    "postinstall": "sh ./scripts/setup-proxy.sh",
+    "preinstall": "npm run setup:clean",
+    "postinstall": "npm run setup:proxy",
+    "setup:clean": "sh ./scripts/clean.sh",
+    "setup:proxy": "sh ./scripts/setup-proxy.sh",
     "stop:all": "pm2 delete all",
     "stop:testrpc": "pm2 delete testrpc",
     "start:testrpc": "pm2 start testrpc"
@@ -23,10 +26,9 @@
   },
   "homepage": "https://github.com/Upchain/upchain-hackathon-starterpack#readme",
   "dependencies": {
+    "upchain-web3-http-provider": "^1.11.1",
     "ethereumjs-testrpc": "^2.2.7",
     "pm2": "^1.1.3",
-    "truffle": "^2.0.8",
-    "upchain-tokens": "git+ssh://git@github.com:Upchain/Tokens.git",
-    "upchain-web3-http-provider": "^1.11.1"
+    "truffle": "^2.0.8"
   }
 }
