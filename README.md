@@ -48,7 +48,17 @@ npm start
 3. Starts truffle and builds contracts
 4. Starts the proxy for the truffle app
 
+### Run tests
+
+This runs a set of mocha based [unit tests](./test)
+
+```bash
+npm run contracts:test
+```
+
 ### Deploy your contracts
+
+This runs a set of [migrations](./migrations) and deploys your contracts to the specified chain.
 
 **Testrpc**
 
@@ -56,21 +66,12 @@ npm start
 npm run contracts:deploy:testrpc
 ```
 
-1. Build your contracts first
-2. Runs all tests
-3. If OK: Deploy to testrpc
-4. Return contracts addresses
-
 **Testnet**
 
 ```bash
-npm run contracts:deploy:testnet --apiKey  <apiKey>
+# todo
 ```
 
-1. Build your contracts first
-2. Runs all tests
-3. If OK: Deploy to testrpc
-4. Return contracts addresses
 
 ## Prerequisites
 

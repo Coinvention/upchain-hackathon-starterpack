@@ -1,21 +1,5 @@
 # Commands
 
-* "preinstall": - cleans old dependencies
-* "postinstall": - triggers the setup of the upchain-proxy (you need access to the certs repo for this)
-* "setup:clean": - "sh ./scripts/clean.sh" - removed old dependencies. Requires a npm install afterwards
-* "setup:proxy":  - installs the proxy
-* "stop:all": "pm2 delete all --silent -f",
-* "start:proxy": starts proxy services for the dapp and the RPC service
-* "start:proxy:app": Starts the app proxy
-* "start:proxy:rpc": Starts the rpc proxy
-* "stop:testrpc": Stops the testrpc service
-* "start:testrpc": Starts the testrpc service
-* "prestart:truffle": Triggers a migration before startup
-* "start:truffle": Build and serve
-* "start:all": Start everything up.
-* "migrate:contracts": Migrate your contracts
-* "test:contracts": Run Tests
-
 ## Start everything
 
 Does a initial setup, builds the app, starts all services.
@@ -94,3 +78,21 @@ Compiles contracts and deploys them. Afterwards they are available in a mocha li
 
 ➜  upchain-hackathon-starterpack git:(master) ✗
 ```
+
+## All Commands
+
+* "preinstall": - cleans old dependencies
+* "postinstall": - triggers the setup of the upchain-proxy (you need access to the certs repo for this)
+* "setup:clean": - "sh ./scripts/clean.sh" - removed old dependencies. Requires a npm install afterwards
+* "setup:proxy":  - installs the proxy
+* "stop:all": "pm2 delete all --silent -f",
+* "start:proxy": starts proxy services for the dapp and the RPC service
+* "start:proxy:app": Starts the app proxy
+* "start:proxy:rpc": Starts the rpc proxy
+* "stop:testrpc": Stops the testrpc service
+* "start:testrpc": Starts the testrpc service
+* "prestart:truffle": Triggers a migration before startup
+* "start:truffle": Build and serve
+* "start:all": Start everything up.
+* "migrate:contracts": Migrate your contracts
+* "test:contracts": Run Tests

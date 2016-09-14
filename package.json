@@ -7,6 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
+    "start": "npm run start:all",
     "preinstall": "npm run setup:clean",
     "postinstall": "npm run setup:proxy",
     "setup:clean": "sh ./scripts/clean.sh",
