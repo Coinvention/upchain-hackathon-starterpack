@@ -1,6 +1,6 @@
 {
   "name": "upchain-hackathon-starterpack",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "This repository gives you a fast start into the World of developing for the  [Blockchain](https://en.wikipedia.org/wiki/Block_chain),  write smart [contracts](https://en.wikipedia.org/wiki/Smart_contract) in Solidity and provide [Dapps](http://dapps.ethercasts.com/) to access them.",
   "main": "index.js",
   "directories": {
