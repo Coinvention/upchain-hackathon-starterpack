@@ -231,13 +231,13 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 
   Contract.new = function() {
     if (this.currentProvider == null) {
-      throw new Error("Migrations error: Please call setProvider() first before calling new().");
+      throw new Error("SampleRecipientSuccess error: Please call setProvider() first before calling new().");
     }
 
     var args = Array.prototype.slice.call(arguments);
 
     if (!this.unlinked_binary) {
-      throw new Error("Migrations error: contract binary not set. Can't deploy new instance.");
+      throw new Error("SampleRecipientSuccess error: contract binary not set. Can't deploy new instance.");
     }
 
     var regex = /__[^_]+_+/g;
@@ -256,7 +256,7 @@ var SolidityEvent = require("web3/lib/web3/event.js");
         return name != arr[index + 1];
       }).join(", ");
 
-      throw new Error("Migrations contains unresolved libraries. You must deploy and link the following libraries before you can deploy a new version of Migrations: " + unlinked_libraries);
+      throw new Error("SampleRecipientSuccess contains unresolved libraries. You must deploy and link the following libraries before you can deploy a new version of SampleRecipientSuccess: " + unlinked_libraries);
     }
 
     var self = this;
@@ -297,7 +297,7 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 
   Contract.at = function(address) {
     if (address == null || typeof address != "string" || address.length != 42) {
-      throw new Error("Invalid address passed to Migrations.at(): " + address);
+      throw new Error("Invalid address passed to SampleRecipientSuccess.at(): " + address);
     }
 
     var contract_class = this.web3.eth.contract(this.abi);
@@ -308,7 +308,7 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 
   Contract.deployed = function() {
     if (!this.address) {
-      throw new Error("Cannot find deployed address: Migrations not deployed or address not set.");
+      throw new Error("Cannot find deployed address: SampleRecipientSuccess not deployed or address not set.");
     }
 
     return this.at(this.address);
@@ -350,21 +350,9 @@ var SolidityEvent = require("web3/lib/web3/event.js");
   "default": {
     "abi": [
       {
-        "constant": false,
-        "inputs": [
-          {
-            "name": "new_address",
-            "type": "address"
-          }
-        ],
-        "name": "upgrade",
-        "outputs": [],
-        "type": "function"
-      },
-      {
         "constant": true,
         "inputs": [],
-        "name": "last_completed_migration",
+        "name": "value",
         "outputs": [
           {
             "name": "",
@@ -376,7 +364,7 @@ var SolidityEvent = require("web3/lib/web3/event.js");
       {
         "constant": true,
         "inputs": [],
-        "name": "owner",
+        "name": "tokenContract",
         "outputs": [
           {
             "name": "",
@@ -386,26 +374,82 @@ var SolidityEvent = require("web3/lib/web3/event.js");
         "type": "function"
       },
       {
+        "constant": true,
+        "inputs": [],
+        "name": "extraData",
+        "outputs": [
+          {
+            "name": "",
+            "type": "bytes"
+          }
+        ],
+        "type": "function"
+      },
+      {
         "constant": false,
         "inputs": [
           {
-            "name": "completed",
+            "name": "_from",
+            "type": "address"
+          },
+          {
+            "name": "_value",
             "type": "uint256"
+          },
+          {
+            "name": "_tokenContract",
+            "type": "address"
+          },
+          {
+            "name": "_extraData",
+            "type": "bytes"
           }
         ],
-        "name": "setCompleted",
+        "name": "receiveApproval",
         "outputs": [],
         "type": "function"
       },
       {
+        "constant": true,
         "inputs": [],
-        "type": "constructor"
+        "name": "from",
+        "outputs": [
+          {
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "type": "function"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "name": "_value",
+            "type": "uint256"
+          }
+        ],
+        "name": "ReceivedApproval",
+        "type": "event"
       }
     ],
-    "unlinked_binary": "0x606060405260008054600160a060020a03191633179055610130806100246000396000f3606060405260e060020a60003504630900f010811461003c578063445df0ac146100c05780638da5cb5b146100c9578063fdacd576146100db575b005b61003a60043560008054600160a060020a039081163390911614156100bc57604080516001547ffdacd576000000000000000000000000000000000000000000000000000000008252600482015290518392600160a060020a0384169263fdacd5769260248281019392829003018183876161da5a03f115610002575050505b5050565b61010160015481565b610113600054600160a060020a031681565b61003a60043560005433600160a060020a03908116911614156100fe5760018190555b50565b60408051918252519081900360200190f35b60408051600160a060020a03929092168252519081900360200190f3",
-    "events": {},
-    "updated_at": 1473941487122,
-    "address": "0x4733fef133624586f03c3f49e4fd53e1c86f2419",
+    "unlinked_binary": "0x6060604052610315806100126000396000f3606060405260e060020a60003504633fa4f245811461004757806355a373d614610050578063609d3334146100625780638f4ffcb1146100c0578063d5ce3389146101c4575b005b6101d660015481565b6101e8600254600160a060020a031681565b6040805160038054602060026001831615610100026000190190921691909104601f8101829004820284018201909452838352610205939083018282801561029e5780601f106102735761010080835404028352916020019161029e565b604080516020600460643581810135601f810184900484028501840190955284845261004594823594602480359560443595946084949201919081908401838280828437509496505050505050506000805473ffffffffffffffffffffffffffffffffffffffff199081168617825560018581556002805490921685178255600380548551948290529093602092821615610100026000190190911692909204601f9081018290047fc2575a0e9e593c00f959f8c92f12db2869c3395a3b0502d05e2516446f71f85b90810193929091908601908390106102a657805160ff19168380011785555b506102d69291505b8082111561031157600081556001016101b0565b6101e8600054600160a060020a031681565b60408051918252519081900360200190f35b60408051600160a060020a03929092168252519081900360200190f35b60405180806020018281038252838181518152602001915080519060200190808383829060006004602084601f0104600302600f01f150905090810190601f1680156102655780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b820191906000526020600020905b81548152906001019060200180831161028157829003601f168201915b505050505081565b828001600101855582156101a8579182015b828111156101a85782518260005055916020019190600101906102b8565b50506040805184815290517f2db24179b782aab7c5ab64add7f84d4f6c845d0779695371f29be1f658d043cd9181900360200190a150505050565b509056",
+    "events": {
+      "0x2db24179b782aab7c5ab64add7f84d4f6c845d0779695371f29be1f658d043cd": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "name": "_value",
+            "type": "uint256"
+          }
+        ],
+        "name": "ReceivedApproval",
+        "type": "event"
+      }
+    },
+    "updated_at": 1473941487124,
     "links": {}
   }
 };
@@ -491,7 +535,7 @@ var SolidityEvent = require("web3/lib/web3/event.js");
     Contract.links[name] = address;
   };
 
-  Contract.contract_name   = Contract.prototype.contract_name   = "Migrations";
+  Contract.contract_name   = Contract.prototype.contract_name   = "SampleRecipientSuccess";
   Contract.generated_with  = Contract.prototype.generated_with  = "3.2.0";
 
   // Allow people to opt-in to breaking changes now.
@@ -531,6 +575,6 @@ var SolidityEvent = require("web3/lib/web3/event.js");
   } else {
     // There will only be one version of this contract in the browser,
     // and we can use that.
-    window.Migrations = Contract;
+    window.SampleRecipientSuccess = Contract;
   }
 })();

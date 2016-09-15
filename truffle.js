@@ -1,17 +1,18 @@
-var UpchainWeb3HttpProvider = require('upchain-web3-http-provider');
 module.exports = {
   build: {
     "index.html": "index.html",
     "app.js": [
+      "javascripts/jquery-3.1.0.min.js",
+      "javascripts/jquery.color-2.1.2.min.js",
       "javascripts/app.js"
     ],
     "app.css": [
       "stylesheets/app.css"
     ],
-    "images/": "images/"
+    "images/": "images/",
+    "fonts/": "fonts/"
   },
   rpc: {
-    provider: UpchainWeb3HttpProvider,
     host: "localhost",
     port: 8545
   }

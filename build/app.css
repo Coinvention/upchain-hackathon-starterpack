@@ -18,13 +18,26 @@ input {
   font-size: 16px;
 }
 
+
+input.short {
+  width: 85%;
+  padding: 5px;
+  font-size: 16px;
+}
+
+input.middle {
+  width: 150px;
+  padding: 5px;
+  font-size: 16px;
+}
+
 button {
   font-size: 16px;
   padding: 5px;
 }
 
-h1, h2 {
-  display: inline-block;
+h1 {
+//  display: inline-block;
   vertical-align: middle;
   margin-top: 0px;
   margin-bottom: 10px;
@@ -32,6 +45,9 @@ h1, h2 {
 
 h2 {
   color: #AAA;
+  vertical-align: middle;
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-size: 32px;
 }
 
@@ -41,10 +57,58 @@ h3 {
   font-size: 24px;
 }
 
+#errmsg {
+  font-weight: bold;
+  color: red;
+  font-size: 18px;
+}
+
+
 .black {
   color: black;
 }
 
 #balance {
   color: black;
+}
+
+table thead td {
+  text-align: center;
+  font-weight: bold;
+}
+
+table td {
+  white-space:nowrap;
+}
+
+table, th, td {
+  text-align: center;
+  border: 0px solid black;
+}
+
+thead td {
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+tfoot td {
+  text-align: center;
+  border-top: 1px solid black;
+  font-weight: bold;
+}
+
+button {
+  display:inline-block;
+  width: 160px;
+  height: 40px;
+}
+
+td.label {
+  text-align: left;
+  //font-weight: bold;
+}
+
+td.message {
+  text-align: left;
+  font-weight: normal;
 }
