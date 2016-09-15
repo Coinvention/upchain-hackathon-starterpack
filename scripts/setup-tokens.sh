@@ -9,3 +9,4 @@ cp -rf .starterpack/Tokens/app/* app/.
 cp -rf .starterpack/Tokens/contracts/* contracts/.
 cp -rf .starterpack/Tokens/migrations/* migrations/.
 cp -rf .starterpack/Tokens/test/* test/.
+cp -rf .starterpack/Tokens/truffle.js .
