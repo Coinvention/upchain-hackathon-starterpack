@@ -1,19 +1,16 @@
 # Upchain Hackathon Starter Pack
 
-This repository gives you a fast start into the World of developing for the  [Blockchain](https://en.wikipedia.org/wiki/Block_chain),  write smart [contracts](https://en.wikipedia.org/wiki/Smart_contract) in Solidity and provide a html-front-end [Dapp](http://dapps.ethercasts.com/) to access them.
+This repository gives you a fast start into the World of developing prototypes for the  [Blockchain](https://en.wikipedia.org/wiki/Block_chain),  write smart [contracts](https://en.wikipedia.org/wiki/Smart_contract) in Solidity and provide a html-front-end [Dapp](http://dapps.ethercasts.com/) to access them.
 
 
 ## Features
 
 * Test Driven Development for Smart Contracts
-* HTTPS first - Adds HTTPS to your development setup
 * Test your contracts locally and a global test block chain
 * Create a basic decentralized application
 
 ## Ingredients
 
-* [upchain-ethereum-rpc-proxy](https://github.com/Upchain/upchain-ethereum-rpc-proxy)
-* [upchain-web3-http-provider](https://github.com/Upchain/upchain-web3-http-provider)
 * [ethereumjs-testrpc](https://github.com/ethereumjs/testrpc)
 * [truffle](https://github.com/ConsenSys/truffle/)
 
@@ -43,9 +40,7 @@ npm start
 ```
 
 1. Starts [testrpc](https://github.com/ethereumjs/testrpc)
-2. Starts the  [proxy](https://github.com/Upchain/upchain-ethereum-rpc-proxy)
-3. Starts truffle and builds contracts
-4. Starts the proxy for the truffle app
+2. Starts the proxy for the truffle app
 
 ### Run tests
 
@@ -85,13 +80,8 @@ A setup, based on NVM will do the trick as well.
   * OpenSUSE: sudo zypper install --type pattern devel_basis
 
 ## Documentation
-
-* [Architectural Overview](./docs/overview.md)
-  * [Proxy](./docs/architecture-proxy.md) - Intercepts all calls to the RPC backend.
-  * [Application Proxy](./docs/architecture-application-proxy.md)
+  * Truffle App
   * JSON RPC / Blockchain access
     * [Testrpc](./docs/architecture-testrpc.md)
-    * PrivateChain (Todo)
     * [Testnet](./docs/architecture-testnet.md)
     * Mainnet (Todo)
-  * Truffle
