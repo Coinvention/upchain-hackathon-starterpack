@@ -15,7 +15,7 @@
     "start:testrpc": "pm2 start testrpc",
     "prestart:truffle": "truffle migrate",
     "start:truffle": "pm2 start truffle -- serve",
-    "start:all": "npm run start:truffle",
+    "start:all": "npm run start:testrpc && npm run start:truffle",
     "migrate:contracts": "truffle migrate",
     "test:contracts": "truffle test",
     "postversion": "git push && git push --tags"

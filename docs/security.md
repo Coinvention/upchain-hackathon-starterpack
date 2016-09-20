@@ -12,6 +12,7 @@ These are security considerations to be followed for usage in public networks
 * All data (blockchain, JSON RPC Results, user input) has to be parsed and validated.
 * Handle utf8 and a small amount of filetypes on your webserver.
 * Your dapp does not need to be online 24/7
+* Enforce safe protocols oin the client side.
 
 A example for a good header.
 
