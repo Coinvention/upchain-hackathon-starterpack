@@ -1,12 +1,21 @@
 # Security Considerations
 
-* Any Data from the blockchain is external input to the code. To assume it is not malicious, just because it is signed is deadly for any OPSEC.
-* localhost is not so local: Your network is connected  to the internet. And there is your sisters Computer or uncle visiting and your phone is a computer as well.
-* be aware about open connections to other systems. p2p has a red team as well.
-* Blockchain is public. Viewer discretion is advised
+These are security considerations to be followed in public networks
 
-## Security
+* No Request without HTTPS/SSL
+* Use Anti XSS headers
+* Never use your dapp without authenticating to it
+* Do not  include JS Content from third paties into your dapp. If your dapp can read window.accounts[0], google analyticas can do as well.
+* Do not store session keys in local storage
 
-* HTTPS
-* CORS
-* .....
+A example for a good header
+
+```javascript
+var setHeader = function(req, res, next) {
+  res.header('X-Frame-Options', 'DENY');
+  res.header('X-XSS-Protection','1; mode=block');
+  res.header('Strict-Transport-Security','max-age=8640000; includeSubDomains');
+  res.header('Content-Security-Policy', "allow 'self'");
+  next();
+};
+```
