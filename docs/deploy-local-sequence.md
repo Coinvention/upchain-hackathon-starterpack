@@ -2,7 +2,7 @@
 
 So how do all steps for a complete workflow, from a file change - to you seeing the app on screen, work?
 
-![Architecture](./images/deoploy.local.sequence.png)
+![Architecture](./images/deploy.local.sequence.png)
 
 ## The Assets
 
