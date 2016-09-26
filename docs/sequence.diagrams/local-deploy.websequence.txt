@@ -1,0 +1,6 @@
+title Truffle Deployment Workflow
+
+Token.sol->Token.compiled.json: solc compiles
+Token.compiled.json->Contract Address: truffle migrates
+Contract Address->Token.sol.js: truffle generates
+Token.sol.js->App.js: truffle/webpack
