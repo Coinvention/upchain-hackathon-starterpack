@@ -9,20 +9,8 @@ This repository gives you a fast start into the World of developing for the Ethe
 * Example Dapp with code and patterns
 * Easy switch to Testnet/Mainnet for smart contract and Dapp deployment
 
-## Ingredients
 
-* [ethereumjs-testrpc](https://github.com/ethereumjs/testrpc)
-* [truffle](https://github.com/ConsenSys/truffle/)
-
-## Getting started
-
-There are 2 basic things you can do with this setup.
-
-* **Develop and test Smart Contract code locally**
-* **Deploy the code to testnet and test your application with a public blockchain**
-
-
-### Getting started with development
+### Getting started
 
 Clone this repo
 ```bash
@@ -33,16 +21,29 @@ Install dependencies
 ```bash
 npm install
 ```
-Start your dapp
+Now you can start your dapp
 
 ```bash
 npm start
 ```
 
-1. Starts [testrpc](https://github.com/ethereumjs/testrpc)
-2. Starts the proxy for the truffle app
+This will take the following inputs and build your dapp:
 
-### Run tests
+* Your Smart Contract Code ([link here])
+* Your Front-End ([link here])
+* Your Config file, incl. the Blockchain you are deploying to ([link here])
+* And relevant tests ([link here])
+
+Your Dapp should now run on [@sebs, please specify, where the dapp is now running], using TestRPC [link to TestRPC description].
+
+## Step by step description
+
+The following section sets out the required commands to run the build process step by step
+
+[@seb, please reorganise the following section in a meaningful way: step by step commands and what they do - in the same order as you would go through them to build your application]
+
+
+** Run tests**
 
 This runs a set of mocha based [unit tests](./test)
 
@@ -50,9 +51,13 @@ This runs a set of mocha based [unit tests](./test)
 npm run contracts:test
 ```
 
-### Migrate
+** Migrate **
 
 This runs a set of [migrations](./migrations) and deploys your contracts to the specified chain.
+
+
+## Changing from TestRPC to Testnet or Mainnet
+In order to deploy your dapp to Testnet or Mainnet, you will need to do [@sebs, please describe]
 
 **Testrpc**
 
@@ -66,7 +71,10 @@ npm run contracts:migrate
 # todo
 ```
 
-## Prerequisites
+## Ingredients
+
+* [ethereumjs-testrpc](https://github.com/ethereumjs/testrpc)
+* [truffle](https://github.com/ConsenSys/truffle/)## Prerequisites
 
 **There are a lot of libraries that require compilation and some -g installs do ease up operation of things. The build tools and a compiler (g++) and python help fix warnings on build time.
 
