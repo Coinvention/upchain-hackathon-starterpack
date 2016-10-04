@@ -29,7 +29,6 @@ This is a Javascript Wrapper around the RPC Interface of Solidity. Your Applicat
 
 Finally we are packing a application, which has
 
-
 ## The Steps
 
 ### npm start
