@@ -34,6 +34,22 @@ This will take the following inputs and build your dapp:
 
 Your app runs on [http://localhost:8080](http://localhost:8080).
 
+## Docker Image
+
+We have added a virtual machine container image for you. This sets you a development environment
+
+Start
+```bash
+npm run start:docker
+```
+
+Stop
+
+```bash
+npm run start:docker
+```
+
+
 ## Ingredients
 
 * [ethereumjs-testrpc](https://github.com/ethereumjs/testrpc)
