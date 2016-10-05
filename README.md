@@ -17,6 +17,7 @@ git clone git@github.com:Upchain/upchain-hackathon-starterpack.git
 Install dependencies
 
 ```bash
+cd upchain-hackathon-starterpack
 npm install
 ```
 Now you can start your dapp
@@ -59,6 +60,8 @@ npm run start:docker
 ## Prerequisites
 
 * Node.js 6.0+
+* Windows Build tools - npm install --global --production windows-build-tools (Windows only)
+* Python installed and available in the ENV 
 * Command Line Tools
   * Mac OS X: Xcode (or OS X 10.9+: xcode-select --install)
   * Ubuntu /  Linux Mint: sudo apt-get install build-essential
