@@ -59,10 +59,11 @@ npm run start:docker
 
 ## Prerequisites
 
+* Git installed
 * Node.js 6.0+
-* Windows Build tools - npm install --global --production windows-build-tools (Windows only)
-* Python installed and available in the ENV 
+* Python installed and available in the ENV
 * Command Line Tools
+  * Windows Build tools - npm install --global --production windows-build-tools (Windows only)
   * Mac OS X: Xcode (or OS X 10.9+: xcode-select --install)
   * Ubuntu /  Linux Mint: sudo apt-get install build-essential
   * Fedora: sudo dnf groupinstall "Development Tools"

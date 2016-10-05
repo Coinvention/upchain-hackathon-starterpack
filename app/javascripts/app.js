@@ -1,14 +1,4 @@
 "use strict"
-
-window.HumanStandardToken = 'bar';
-
-var HumanStandardToken = 'baz'
-var foo = function() {
-
-  HumanStandardToken = 5;
-  return HumanStandardToken;
-};
-
 const TX_BROWSER="https://morden.ether.camp/transaction";
 const ACC_BROWSER="https://morden.ether.camp/account/";
 var account_me, account_other;
