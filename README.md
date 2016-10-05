@@ -50,12 +50,10 @@ Stop
 npm run start:docker
 ```
 
-
 ## Ingredients
 
 * [ethereumjs-testrpc](https://github.com/ethereumjs/testrpc)
 * [truffle](https://github.com/ConsenSys/truffle/)
-
 
 ## Prerequisites
 
@@ -63,7 +61,7 @@ npm run start:docker
 * Node.js 6.0+
 * Python installed and available in the ENV
 * Command Line Tools
-  * Windows Build tools - npm install --global --production windows-build-tools (Windows only)
+  * Windows Build tools - npm install --global --production windows-build-tools
   * Mac OS X: Xcode (or OS X 10.9+: xcode-select --install)
   * Ubuntu /  Linux Mint: sudo apt-get install build-essential
   * Fedora: sudo dnf groupinstall "Development Tools"
