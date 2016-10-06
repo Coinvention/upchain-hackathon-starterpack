@@ -7,11 +7,9 @@
     "doc": "docs"
   },
   "scripts": {
-    "start": "truffle serve",
+    "start": "pm2 start testrpc && sleep 5 && pm2 start truffle -- serve -name=dapp",
     "preinstall": "npm run setup:clean",
     "setup:clean": "sh ./scripts/clean.sh",
-    "start:testrpc": "testrpc",
-    "prestart:truffle": "sleep 5 && truffle migrate",
     "start:truffle": "truffle serve",
     "migrate:contracts": "truffle migrate",
     "test:contracts": "truffle test",
@@ -29,10 +27,6 @@
   "homepage": "https://github.com/Upchain/upchain-hackathon-starterpack#readme",
   "dependencies": {
     "bcrypt": "^0.8.7",
-    "ethereumjs-testrpc": "^2.2.7",
-    "pm2": "^2.0.18",
-    "secp256k1": "^3.2.0",
-    "truffle": "^2.0.8",
     "upchain-web3-http-provider": "^3.1.5"
   }
 }

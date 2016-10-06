@@ -4,6 +4,8 @@ FROM node:argon
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
+RUN npm install -g truffle ethereumjs-testrpc pm2
+
 # Install app dependencies
 COPY package.json /usr/src/app/
 RUN npm install

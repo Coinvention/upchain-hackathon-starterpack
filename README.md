@@ -1,6 +1,7 @@
 # Upchain Hackathon Starter Pack
 
-This repository gives you a fast start into the World of developing for the Ethereum  [Blockchain](https://en.wikipedia.org/wiki/Block_chain),  write smart [contracts](https://en.wikipedia.org/wiki/Smart_contract) in Solidity and provide a html-front-end [Dapp](http://dapps.ethercasts.com/) to access them.
+This repository gives you a fast start into the World of developing for the Ethereum  
+[Blockchain](https://en.wikipedia.org/wiki/Block_chain),  write smart [contracts](https://en.wikipedia.org/wiki/Smart_contract) in Solidity and provide a html-front-end [Dapp](http://dapps.ethercasts.com/) to access them.
 
 ## Features
 
@@ -8,22 +9,30 @@ This repository gives you a fast start into the World of developing for the Ethe
 * Example Dapp with code and patterns
 * Easy switch to Testnet/Mainnet for smart contract and Dapp deployment
 
-### Getting started
+## Requirements
 
-Clone this repo
+* git
+* node.js version 6.0.0+
+* a linux environment or our docker Image
+* Open Ports: 8080, 8545, 80
+
+## Getting started
+
+Git clone this repo
+
 ```bash
 git clone git@github.com:Upchain/upchain-hackathon-starterpack.git
 ```
+
 Install dependencies
 
-```bash
-cd upchain-hackathon-starterpack
-npm install
-```
-Now you can start your dapp
+* truffle - Your toolbelt for the solidity language and building DAPPs
+* ethereumjs-testrpc - A test implementation of the blockchain for local development
+* pm2 - To manage the different node processes and simplify logging.
+
 
 ```bash
-npm start
+npm install -g truffle pm2 ethereumjs-testrpc
 ```
 
 This will take the following inputs and build your dapp:
@@ -37,15 +46,11 @@ Your app runs on [http://localhost:8080](http://localhost:8080).
 
 ## Docker Image
 
+(Experimental):
+
 We have added a virtual machine container image for you. This sets you a development environment
 
 Start
-```bash
-npm run start:docker
-```
-
-Stop
-
 ```bash
 npm run start:docker
 ```
