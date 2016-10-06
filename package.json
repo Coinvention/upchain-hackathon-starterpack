@@ -7,10 +7,10 @@
     "doc": "docs"
   },
   "scripts": {
-    "start": "pm2 start testrpc && sleep 5 && pm2 start truffle -- serve -name=dapp",
+    "start": "pm2 start testrpc && sleep 5 && pm2 start truffle -- serve --name=dapp",
+
     "preinstall": "npm run setup:clean",
     "setup:clean": "sh ./scripts/clean.sh",
-    "start:truffle": "truffle serve",
     "migrate:contracts": "truffle migrate",
     "test:contracts": "truffle test",
     "postversion": "git push && git push --tags"
