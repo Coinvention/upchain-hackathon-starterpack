@@ -7,6 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
+    "start:docker": "npm run build:docker && docker run -p 8545:8545 -p 8080:8080 -i -t --entrypoint '/bin/bash' upchain:hackathon",
+    "build:docker": "docker build -t 'upchain:hackathon' . ",
     "start": "pm2 start testrpc && sleep 5 && pm2 start truffle -- serve --name=dapp",
     "preinstall": "npm run setup:clean",
     "setup:clean": "sh ./scripts/clean.sh",

@@ -18,6 +18,9 @@ This repository gives you a fast start into the World of developing for the Ethe
 
 ## Getting started
 
+### Local Development
+
+
 Git clone this repo
 
 ```bash
@@ -33,6 +36,8 @@ Install dependencies
 
 ```bash
 npm install -g truffle pm2 ethereumjs-testrpc
+npm install
+npm start
 ```
 
 This will take the following inputs and build your dapp:
