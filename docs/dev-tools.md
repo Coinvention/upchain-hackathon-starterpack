@@ -1,6 +1,6 @@
 # Upchain API Endpoints
 * https://api.upchain.io (documentation: https://docs.upchain.io)
-* https://eth.upchain.io/testnet (a hosted geth node to relay your transactions)
+* https://eth.upchain.io/testnet (a hosted geth node to relay your transactions, for credentials check the slack channel)
 
 # Dev Tools
 * https://github.com/Upchain/upchain-hackathon-starterpack (start developing smart contracts and dapps)
